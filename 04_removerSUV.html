@@ -10,10 +10,22 @@
 
     //ENTRADA
 
+    alert(`Qual dos carros você deseja remover? "Tiggo", "Sportage", "Tucson", "EcoSport"`)
+
+    let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+
+    const remover = prompt(`Digite o carro que você quer remover`);
+
+    let carrosSUValterado = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+
     //PROCESSAMENTO
 
-
-
+    const tira = carrosSUValterado.indexOf(remover);
+    
+    carrosSUValterado.splice(tira, 1);
+    
     //SAÍDA
+
+    document.write(`A lista antiga é: ${carrosSUV.join(", ")}, e a nova é: ${carrosSUValterado.join(", ")}`);
 
 </script>

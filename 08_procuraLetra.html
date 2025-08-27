@@ -1,4 +1,4 @@
-meta charset="UTF-8" />
+<meta charset="UTF-8" />
 <script>
     /*
     PROBLEMA: PROCURAR LETRA
@@ -9,10 +9,26 @@ meta charset="UTF-8" />
     */
 
     //ENTRADA
+    
+    const palavra = prompt(`Digite uma palavra`).toUpperCase().trim();
+    const letra = prompt(`Digite uma letra para procurar na palavra anterior`).toUpperCase().trim();
+
 
     //PROCESSAMENTO
 
+    let mensagem
+    Array.from(palavra);
+    const procura =  Number(palavra.indexOf(letra));
+    if(procura > -1){
+        mensagem = `A letra aparece pela primeira vez na posicão ${procura + 1}`
+
+    }else{
+        mensagem = `A letra digitada não aparece na palavra!`
+    }
+
 
     //SAÍDA
+
+    document.write(`${mensagem}`)
 
 </script>
