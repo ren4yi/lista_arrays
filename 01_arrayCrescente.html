@@ -7,12 +7,23 @@
     */
 
     //ENTRADA
-    const laura = prompt(`mana, você é phomsyr?`);
-    const tiaga = promt(`mana, você é gay?`)
+
+const primeiroNumero = Number(prompt(`Insira um numero`));
+const segundoNumero = Number(prompt(`Insira um numero`));
 
     //PROCESSAMENTO
 
 
+let array
+const diferenca = primeiroNumero-segundoNumero
+if (diferenca > 0) { array = [segundoNumero , primeiroNumero]
+  
+} else {
+    array = [primeiroNumero ,segundoNumero]
+    
+}
     //SAÍDA
+
+alert(`${array.join(" - ")} `);
 
 </script>

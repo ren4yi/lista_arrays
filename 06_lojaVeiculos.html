@@ -14,9 +14,34 @@
 
     //ENTRADA
 
+   const carro1 = prompt(`Informe um veículo para serem adicionado a lista`);
+   const carro2 = prompt(`Informe outro veículo para serem adicionado a lista`);
+   const carro3 = prompt(`Informe outro veículo para serem adicionado a lista`);
+   const tipocarro = prompt(`Informe o tipo do veículo (SUV, Sedan ou Hatch")`).toUpperCase();
+
 
     //PROCESSAMENTO
 
+ let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    let cassosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
+    let carrosHatch = ["308", "Focus", "i30"];
+
+    if (tipocarro === "SUV") {
+       carrosSUV.push(carro1,carro2,carro3);
+       document.write(`a lista final é ${carrosSUV}`);
+    }
+    else if (tipocarro === "SEDAN") {
+        cassosSedan.push(carro1,carro2,carro3);
+        document.write(`a lista final é ${cassosSedan}`);
+    }
+    else if (tipocarro === "HATCH") {
+        carrosHatch.push(carro1,carro2,carro3);
+         document.write(`a lista final é ${carrosHatch}`);
+    }
+    else {
+        alert(`informe um valor valido`)
+    }
+   
 
     //SAÍDA
 

@@ -7,15 +7,32 @@
     Crie um array para cada tipo de item e, ao fim, apresente os itens da sequinte forma:
     As frutas a serem compradas são: fruta1, fruta2, fruta3.
     As bebidas a serem compradas são: bebida1, bebida2, bebida3.
-    A lista completa de compras é: fruta1, fruta2, fruta3, bebida1, bebida2, bebida3.
+    A lista completa de compras é: fruta1, furta2, fruta3, bebida1, bebida2, bebida3.
     */
 
     //ENTRADA
 
+const fruta1 = prompt(`Informe uma fruta para a lista de compras`);
+
+const fruta2 = prompt(`Informe uma outra fruta para a lista de compras`);
+
+const fruta3 = prompt(`Informe mais uma fruta para a lista de compras`);
+
+const bebidas1 = prompt(`Informe uma bebida para a lista de compras`);
+
+const bebidas2 = prompt(`Informe uma outra bebida para a lista de compras`);
+
+const bebidas3 = prompt(`Informe mais uma bebida para a lista de compras`);
 
     //PROCESSAMENTO
 
+let listadefrutas = [fruta1, fruta2, fruta3];
+
+let listadebebidas = [bebidas1, bebidas2, bebidas3];
+let listadecomprasinteira = [fruta1, fruta2, fruta3, bebidas1, bebidas2, bebidas3];
 
     //SAÍDA
+
+document.write(`As frutas a serem compradas são: ${listadefrutas},as bebidas a serem compradas são: ${listadebebidas} e a lista completa é: ${listadecomprasinteira}`);
 
 </script>

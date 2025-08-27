@@ -10,10 +10,15 @@
 
     //ENTRADA
 
+   const somar = prompt(`Informe qual carro deseja adicionar a lista,("Tiggo", "Sportage", "Tucson", "EcoSport")`);
+   let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+   let listaNova = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
 
     //PROCESSAMENTO
 
-
+    carrosSUV.push(somar)
+    
     //SAÍDA
-
+    
+  document.write(`Sua lista antiga é ${listaNova.join(" - ")}, e sua lista atual é ${carrosSUV.join(" - ")}`);
 </script>

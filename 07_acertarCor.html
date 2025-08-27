@@ -14,10 +14,21 @@
 
     //ENTRADA
 
+    let corInformada = prompt(`ìnforme uma cor`).toLocaleLowerCase()
+
+    const nomeDasCores = ["azul", "amarelo", "verde", "branco", "preto", "marrom", "cinza"];
+
+    let numeroAleatorio = Math.floor(Math.random() * 7);
 
     //PROCESSAMENTO
 
-
+    const corSorteada = nomeDasCores[numeroAleatorio];
+     if (corInformada === corSorteada) {
+        alert(`PARABÉNS! VOCÊ ESTÁ COM SORTE NA COR ${corSorteada}!`);
+    } else {
+        alert(`NÃO FOI DESSA VEZ... TENTE NOVAMENTE! A cor era ${corSorteada}.`);
+    }
+    
     //SAÍDA
 
 
